@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    body {
+        margin: 150px;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+
+    .row,
+    .row>.column {
+        padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    /* Clear floats after rows */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+
+    .content {
+        background-color: black;
+        padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<body class="w3-black">
+    <h1>PORTFOLIO</h1>
+    <h2>create</h2>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="c4-1.jpg" alt="Mountains" style="width:100%">
+                <h3>옷감찾기</h3>
+                <p>옷을 만들기 전 옷감선택입니다.
+                    디자인과 옷감선택은 옷 만들기에서 가장 중요하고도 가장 어려운입니다.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c5.jpg" alt="Lights" style="width:100%">
+                <h3>패턴찾기</h3>
+                <p>옷 디자인 대로 큰 패턴지에 먼저 옷 구성요소를 하나하나 들어갈 패턴을 제도하는 작업입니다.
+                    치수와 안감, 겉감 디자인 모든요소를 결정하는 단계입니다.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c6.jpg" alt="Nature" style="width:100%">
+                <h3>제도하기</h3>
+                <p>패턴 찾기에서 찾은 패턴을 패턴지에 그려 정확하고도 또한 디자인적인 요소를 가미해야하는 작업입니다.
+                    실선과 완성선(실제 옷감에대고짜를때) 또한 중요한 단계입니다.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c7.jpg" alt="Mountains" style="width:100%">
+                <h3>자르기</h3>
+                <p>제도한 패턴을 선택한 옷감에 대고 초크를 사용하여 옷감을 그리고 자르는 단계입니다.
+                    패턴과 맞는지 또한 완성선을 제대로 그렸는지 정확히 확인하고 자르는 단계입니다.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c8.jpg" alt="Mountains" style="width:100%">
+            <h3>제봉하기</h3>
+            <p>패턴과 자르는 단계에서 옷감을 만들고 구성요소를 붙이는 단계입니다. 어깨부분과 들어가는 허리부분은 디자인과 모델에 맞게
+                디자인적인 요소가 들어가는 단계입니다.
+            </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c9.jpg" alt="Mountains" style="width:100%">
+            <h3>점검하기</h3>
+            <p>만들옷을 모델에게 입혀보기전 실수한 부분이 없는지 또 추가할 부분은 없는지 마네킹에 입혀보고 확인하는 단계입니다. </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c10.jpg" alt="Mountains" style="width:100%">
+            <h3>작업지시서작성</h3>
+            <p>실제 회사에서 작업을 하는것처럼 만든옷을 컴퓨터로 일러스트 작업을 하여 보고하는 단계입니다. </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c10-1.jpg" alt="Mountains" style="width:100%">
+            <h3>현장실습</h3>
+            <p>해피상사 2017-07-03 ~2017-07-28 한달간 현장에서 어떤 일을하는지 경험했습니다.
+                옷감으로 옷이만들어지는 단계와 컴퓨터로 작업하는 단계 또한 포장하고 배송하는 단계까지 배울수 있었습니다.</p>
+        </div>
+    </div>
+    
+   
+</body>
+
+</html>

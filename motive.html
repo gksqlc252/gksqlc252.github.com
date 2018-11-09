@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    body {
+        margin: 150px;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+
+    .row,
+    .row>.column {
+        padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    /* Clear floats after rows */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+
+    .content {
+        background-color: black;
+        padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<body class="w3-black">
+    <div class="main">
+
+        <h1>PORTFOLIO</h1>
+        <h2>motive</h2>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="c11.jpg" alt="Mountains" style="width:100%">
+                    <h3>vintage</h3>
+                    <p>각 시대,세대 마다의 유행이 있었습니다.
+                        그리고 문화는 시간에 따라 흐르게 됩니다.
+                        그리고 옛날문화를 그리워하고 새롭게
+                        도전하는 것이 vintage 라고 생각합니다. </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="c12.jpg" alt="Lights" style="width:100%">
+                    <h3>unique</h3>
+                    <p>독특한, 특별한, 개성, 개인의성질 등으로 다양하게 존재합니다.
+                        바라보는 관점에 따라 이사람이 개성있다. 특별합니다.
+                        옷에 있어서도 같은 것 보다는 유니크 함이 중요하다고 생각합니다.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="c13.jpg" alt="Nature" style="width:100%">
+                    <h3>popular</h3>
+                    <p>한 시대는 가지고 있는 대중성,인기가 있습니다.
+                        또한 유행(trend)을 이끄는 사람이 패션리더라고 불립니다. </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="c14.jpg" alt="Mountains" style="width:100%">
+                    <h3>artistic</h3>
+                    <p>예술성, 예술은 붓으로 또한 음악으로만 하는 것이 아닌
+                        옷을 디자인 하고 만드는 것이 예술이라고 생각합니다.
+                        옷은 가치가 있어야한다고 생각합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="c15.jpg" alt="Bear" style="width:100%">
+            <h3>빈티지함과 새로움을 섞은 영감을 주는 사이트 입니다.</h3>
+            <p>
+                <a href="https://atelierandrepairs.com/" target="_blank" title="new">>>>atelierandrepairs.com
+                </a> </p>
+            <p>
+                <a href="https://www.instagram.com/atelierandrepairs/" target="_blank" title="new">>>>insta:
+                    atelierandrepairs
+
+                </a> </p>
+        </div>
+    </div>
+</body>
+
+</html>

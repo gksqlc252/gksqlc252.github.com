@@ -162,116 +162,30 @@
 </style>
 
 <body class="w3-black">
-    <h1>PORTFOLIO</h1>
-    <h2>photoshop ,illustrator</h2>
-
-    <!-- Portfolio Gallery Grid -->
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 11</div>
-        <img src="e1-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 11</div>
-        <img src="e2.jpg" style="width:100%">
-
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 /11</div>
-        <img src="e3-1.jpg" style="width:100%">
-
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 11</div>
-        <img src="e4.jpg" style="width:100%">
-
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">5 /11</div>
-        <img src="e6-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">6 / 11</div>
-        <img src="e7.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">7 / 11</div>
-        <img src="e8-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">8 / 11</div>
-        <img src="e9.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">9 / 11</div>
-        <img src="e10-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">10/ 11</div>
-        <img src="e11-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">11/ 11</div>
-        <img src="e12-1.jpg" style="width:100%">
-
-    </div>
-
-
-    </div>
+    <h1>STUDY</h1>
+    <a href="exhibition.html">
+        <h1 id="demo2"> exhibition</h1>
+    </a>
     <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-        <span class="dot" onclick="currentSlide(9)"></span>
-        <span class="dot" onclick="currentSlide(10)"></span>
-        <span class="dot" onclick="currentSlide(11)"></span>
-
-    </div>
-
-
-    </div>
+    <br>
+    <p>(글자부분을클릭해주세요)</p>
+    <img src="q4.jpg" alt="Workplace" usemap="#workmap" width="700" height="500">
+    <map name="workmap">
+        <area shape="rect" coords="10,90,200,500" alt="Computer" href="motive.html">
+        <area shape="rect" coords="250,200,453,700" alt="Phone" href="illustration.html">
+        <area shape="rect" coords="400,150,700,500" alt="Cup of coffee" href="create.html">
+    </map>
+    <br>
     <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        document.getElementById("demo2").addEventListener("mouseover", mouseOver);
+        document.getElementById("demo2").addEventListener("mouseout", mouseOut);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+        function mouseOver() {
+            document.getElementById("demo2").style.color = "red";
         }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+        function mouseOut() {
+            document.getElementById("demo2").style.color = "black";
         }
     </script>
 
