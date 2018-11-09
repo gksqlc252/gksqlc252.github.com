@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+    crossorigin='anonymous'>
 <style>
     body,
     h1,
@@ -15,10 +17,6 @@
     h5,
     h6 {
         font-family: "Montserrat", sans-serif
-    }
-
-    body {
-        margin: 150px;
     }
 
     .w3-row-padding img {
@@ -42,6 +40,7 @@
             margin-left: 0
         }
     }
+
 
     .slideshow-container {
         max-width: 1000px;
@@ -162,111 +161,171 @@
 </style>
 
 <body class="w3-black">
-    <h1>PORTFOLIO</h1>
-    <h2>github을 통한 홈페이지 구축</h2>
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 11</div>
-        <img src="g1.jpg" style="width:100%">
 
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 11</div>
-        <img src="g2.jpg" style="width:100%">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="111.jpg" style="width:100%">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="index.html#study" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fas fa-book w3-xxlarge"></i>
+            <p>STUDY</p>
+        </a>
+        <a href="index.html#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTO</p>
+        </a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>INFO</p>
+        </a>
+    </nav>
 
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 11</div>
-        <img src="g3-2.jpg" style="width:100%">
-
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 11</div>
-        <img src="g3-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 11</div>
-        <img src="g4.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">6 / 11</div>
-        <img src="g5.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">7 / 11</div>
-        <img src="g6.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">8 / 11</div>
-        <img src="g7-1.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">9 / 11</div>
-        <img src="g7.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">10 / 11</div>
-        <img src="g8.jpg" style="width:100%">
-
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">11 / 11</div>
-        <img src="g9.jpg" style="width:100%">
-
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#study" class="w3-bar-item w3-button" style="width:25% !important">STUDY</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
     </div>
 
-    </div>
-    <br>
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span> PORTFOLIO</h1>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-        <span class="dot" onclick="currentSlide(9)"></span>
-        <span class="dot" onclick="currentSlide(10)"></span>
-        <span class="dot" onclick="currentSlide(11)"></span>
-    </div>
+        </header>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">github을 통한 홈페이지 구축</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <br>
+            <div class="mySlides fade">
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+                <img src="g1.jpg" style="width:100%">
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+            </div>
+            <div class="mySlides fade">
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                <img src="g2.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="g3-2.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="g3-1.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g4.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+                <img src="g5.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g6.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g7-1.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g7.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g8.jpg" style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+
+                <img src="g9.jpg" style="width:100%">
+
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      
+    </footer>
+
 
 </body>
 

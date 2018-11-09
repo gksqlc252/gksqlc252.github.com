@@ -9,17 +9,39 @@
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
     crossorigin='anonymous'>
 <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-p{
-        font-size:20px;
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
         }
+    }
+
+    
 
     /* Style the tab */
     .tab {
@@ -59,15 +81,16 @@ p{
     .tabcontent {
         float: left;
         padding: 0px 12px;
-        border: 1px solid #ccc;
+        border: 1px solid rgb(156, 156, 156);
         background-color: #ccc;
         width: 70%;
         border-left: none;
         height: 300px;
     }
-  #w3{
-      padding-top: 50px;
-  }
+
+    #w3 {
+        padding-top: 50px;
+    }
 </style>
 
 <body class="w3-black">
@@ -133,29 +156,33 @@ p{
                 </div>
 
                 <div id="London" class="tabcontent">
-                    <h3>장점</h3>
-                    <p> 차별화,체력 두가지로 다른사람들과 일에 대해 다른생각으로 접근하고있습니다.
-                        그리고 옷 입는것도 그 사람의 개성이라고 생각하여 남들과는 새롭게 좀 더 다르게 생각하고 중요하다고 생각합니다.
-                        평소 자기관리로 꾸준히 운동하고 있으며 주말마다 친구들과 축구를 하며 체력을 관리합니다.</p>
+                    <h3>성격</h3>
+                    <p>끝을 보는 성격입니다. 하고자 하는 일이 있다면 최선을 다해 열심히 합니다.</p>
                 </div>
 
                 <div id="Paris" class="tabcontent">
-                    <h3>단점</h3>
-                    <p>쉽게 생각할 수 있는 것도 어렵게 생각하는 것 입니다.
-                        또한 급한 성격때문에 일을 빠르게 하려고 해서 빠뜨리는 부분을 점검하여 일을 더욱 신중하게 해야되는 부분이 있습니다.</p>
+                    <h3>장단점</h3>
+                    <p>
+                        차별화 다른사람들과 같은것을 싫어하고 다른생각을 합니다.
+                        <BR>
+                        체력 만큼은 누구에게도 지지않습니다.
+                        <BR>
+                        쉽게 생각할 수 있는 것도 어렵게 생각하는 것 입니다.
+                        <BR>
+                        빠뜨리는 부분을 점검하여 일을 더욱 신중하게 해야되는 부분이 있습니다.</p>
                 </div>
 
                 <div id="Tokyo" class="tabcontent">
                     <h3>관심사</h3>
-                    <p>일본 여행이후 일본문화에 대해 관심이 생겨, 일본어(jpt)에 목표를 가지고 시험에 준비하고있습니다.</p>
+                    <p>
+                            1日2時間、日本語を勉強しています。
+                            (하루 2시간 일본어를 공부하고있습니다.)<BR> 일본여행 후 일본어에 관심이 생겨 jpt(450) 에 준비하고있습니다.</p>
                 </div>
 
                 <div id="korea" class="tabcontent">
                     <h3>목표</h3>
-                    <p>현재 인터넷 쇼핑은 sns 홍보를 기반으로 쇼핑구조가 생겼습니다. 사람들은 매 순간 새로움을 추구하고 있으며
-                        소셜미디어 (facebook, instagram, youtube)등 각 매체에서 서로 소통하면서 정보를 주고받고있으며, 상품구매에 많은 영향에 미치게 되었습니다.
-                        저 또한 사람들이 쉽게 접근 할 수있고 보기 좋은 웹 사이트을 만드는것이 목표입니다.
-
+                    <p>
+                        사람들에게 다가 갈수 있는 사람이 되고싶습니다.<BR> 사람들과 대화하는 사람이 되고싶습니다.
                     </p>
                 </div>
                 <script>
@@ -199,7 +226,9 @@ p{
             </a>
             <div class="w3-white">
                 <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-            </div><br>
+            </div>
+            <h3>(click)</h3>
+            <br>
 
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
                 <div class="w3-quarter w3-section">
@@ -224,22 +253,26 @@ p{
                 <h2 class="w3-text-light-grey">Study</h2>
                 <hr style="width:200px" class="w3-opacity">
                 <br>
-                    <h2>학교,학원에서 공부한것을 기록하고 나열하였습니다.</h2>
-                    <br>
-                    <br>
-                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
-                    style="width:80px">
-                <a href="works.html"><p><span class="w3-large w3-margin-right">기전대학교</span><br>2016.01.28 ~ 2018.01.31</p></a>
+                <h2>학교,학원에서는 무엇을 공부하였는가?</h2>
                 <br>
-    
+                <br>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                    style="width:80px">
+                <a href="works.html">
+                    <p><span class="w3-large w3-margin-right">기전대학교</span><br>2016.01.28 ~ 2018.01.31</p>
+                </a>
+                <br>
+
                 <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
                     style="width:80px">
-                <a href="works2.html"><p><span class="w3-large w3-margin-right">(주)한국마이스터 교육원</span><br> 2018.05.26 ~ 2018.11.26 </p></a>
-                   
-                
+                <a href="works2.html">
+                    <p><span class="w3-large w3-margin-right">(주)한국마이스터 교육원</span><br> 2018.05.26 ~ 2018.11.26 </p>
+                </a>
+
+
             </div>
 
-           
+
         </div>
 
         <!-- Portfolio Section -->
@@ -277,9 +310,9 @@ p{
                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
                     gksqlc2471@naver.com</p>
             </div><br>
-          
 
-           
+
+
             <!-- End Contact Section -->
         </div>
 

@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+    crossorigin='anonymous'>
 <style>
     body,
     h1,
@@ -15,10 +17,6 @@
     h5,
     h6 {
         font-family: "Montserrat", sans-serif
-    }
-
-    body {
-        margin: 150px;
     }
 
     .w3-row-padding img {
@@ -43,6 +41,9 @@
         }
     }
 
+
+
+    /* Style the tab */
     .main {
         max-width: 1000px;
         margin: auto;
@@ -104,65 +105,123 @@
 </style>
 
 <body class="w3-black">
-    <div class="main">
 
-        <h1>PORTFOLIO</h1>
-        <h2>motive</h2>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="111.jpg" style="width:100%">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="index.html#study" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fas fa-book w3-xxlarge"></i>
+            <p>STUDY</p>
+        </a>
+        <a href="index.html#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTO</p>
+        </a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>INFO</p>
+        </a>
+    </nav>
 
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="c11.jpg" alt="Mountains" style="width:100%">
-                    <h3>vintage</h3>
-                    <p>각 시대,세대 마다의 유행이 있었습니다.
-                        그리고 문화는 시간에 따라 흐르게 됩니다.
-                        그리고 옛날문화를 그리워하고 새롭게
-                        도전하는 것이 vintage 라고 생각합니다. </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="c12.jpg" alt="Lights" style="width:100%">
-                    <h3>unique</h3>
-                    <p>독특한, 특별한, 개성, 개인의성질 등으로 다양하게 존재합니다.
-                        바라보는 관점에 따라 이사람이 개성있다. 특별합니다.
-                        옷에 있어서도 같은 것 보다는 유니크 함이 중요하다고 생각합니다.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="c13.jpg" alt="Nature" style="width:100%">
-                    <h3>popular</h3>
-                    <p>한 시대는 가지고 있는 대중성,인기가 있습니다.
-                        또한 유행(trend)을 이끄는 사람이 패션리더라고 불립니다. </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="c14.jpg" alt="Mountains" style="width:100%">
-                    <h3>artistic</h3>
-                    <p>예술성, 예술은 붓으로 또한 음악으로만 하는 것이 아닌
-                        옷을 디자인 하고 만드는 것이 예술이라고 생각합니다.
-                        옷은 가치가 있어야한다고 생각합니다.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <img src="c15.jpg" alt="Bear" style="width:100%">
-            <h3>빈티지함과 새로움을 섞은 영감을 주는 사이트 입니다.</h3>
-            <p>
-                <a href="https://atelierandrepairs.com/" target="_blank" title="new">>>>atelierandrepairs.com
-                </a> </p>
-            <p>
-                <a href="https://www.instagram.com/atelierandrepairs/" target="_blank" title="new">>>>insta:
-                    atelierandrepairs
-
-                </a> </p>
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#study" class="w3-bar-item w3-button" style="width:25% !important">STUDY</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span> PORTFOLIO</h1>
+
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Motive</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <br>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="c11.jpg" alt="Mountains" style="width:100%">
+                        <h3>vintage</h3>
+                        <p>각 시대,세대 마다의 유행이 있었습니다.
+                            그리고 문화는 시간에 따라 흐르게 됩니다.
+                            그리고 옛날문화를 그리워하고 새롭게
+                            도전하는 것이 vintage 라고 생각합니다. </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="c12.jpg" alt="Lights" style="width:100%">
+                        <h3>unique</h3>
+                        <p>독특한, 특별한, 개성, 개인의성질 등으로 다양하게 존재합니다.
+                            바라보는 관점에 따라 이사람이 개성있다. 특별합니다.
+                            옷에 있어서도 같은 것 보다는 유니크 함이 중요하다고 생각합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="c13.jpg" alt="Nature" style="width:100%">
+                        <h3>popular</h3>
+                        <p>한 시대는 가지고 있는 대중성,인기가 있습니다.
+                            또한 유행(trend)을 이끄는 사람이 패션리더라고 불립니다. </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="c14.jpg" alt="Mountains" style="width:100%">
+                        <h3>artistic</h3>
+                        <p>예술성, 예술은 붓으로 또한 음악으로만 하는 것이 아닌
+                            옷을 디자인 하고 만드는 것이 예술이라고 생각합니다.
+                            옷은 가치가 있어야한다고 생각합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <img src="c15.jpg" alt="Bear" style="width:100%">
+                <h3>빈티지함과 새로움을 섞은 영감을 주는 사이트 입니다.</h3>
+                <p>
+                    <a href="https://atelierandrepairs.com/" target="_blank" title="new">>>>atelierandrepairs.com
+                    </a> </p>
+                <p>
+                    <a href="https://www.instagram.com/atelierandrepairs/" target="_blank" title="new">>>>insta:
+                        atelierandrepairs
+
+                    </a> </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+     
+    </footer>
+
+
 </body>
 
 </html>

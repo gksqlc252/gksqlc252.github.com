@@ -1,24 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Study</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon (2).ico" />
-</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    #article {
-        text-align: center;
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
     }
 
     body {
-        background-color: white;
-        padding: 20px;
-        font-family: Arial;
+        margin: 150px;
     }
 
-    /* Center website */
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
     .main {
         max-width: 1000px;
         margin: auto;
@@ -30,24 +54,25 @@
     }
 
     .row {
-        margin: 10px -16px;
+        margin: 8px -16px;
     }
 
     /* Add padding BETWEEN each column */
+
     .row,
     .row>.column {
         padding: 8px;
     }
 
-    /* Create three equal columns that floats next to each other */
+    /* Create four equal columns that floats next to each other */
+
     .column {
         float: left;
-        width: 33.33%;
-        display: none;
-        /* Hide all elements by default */
+        width: 25%;
     }
 
     /* Clear floats after rows */
+
     .row:after {
         content: "";
         display: table;
@@ -55,203 +80,105 @@
     }
 
     /* Content */
+
     .content {
-        background-color: white;
+        background-color: black;
         padding: 10px;
     }
 
-    /* The "show" class is added to the filtered elements */
-    .show {
-        display: block;
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
     }
 
-    /* Style the buttons */
-    .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: #f1f1f1;
-        cursor: pointer;
-    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
-    .btn:hover {
-        background-color: #ddd;
-    }
-
-    .btn.active {
-        background-color: #666;
-        color: #f1f1f1;
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
     }
 </style>
 
+<body class="w3-black">
+    <h1>PORTFOLIO</h1>
+    <h2>create</h2>
 
-<body style="overflow:auto">
-    <h1>
-        <a href="index.html">
-            <img src="123.jpg" width="50%" alt="myportfolio">
-        </a>
-    </h1>
-    <div id="grid">
-        <ul>
-            <a style="font-size: 25px">Categories</a>
-            <br>
-            <br>
-            <li>
-                <a href="1.html">About me</a>
-            </li>
-            <br>
-            <li>
-                <a href="2.html">Study</a>
-            </li>
-            <br>
-            <li>
-                <a href="3.html">Skill</a>
-            </li>
-            <br>
-            <li>
-                <a href="4.html">Project</a>
-            </li>
-            <br>
-            <li>
-                <a href="info.html">Info</a>
-            </li>
-
-        </ul>
-
-        <div id="article">
-            <div class="main">
-                <p>study</p>
-
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('nature')"> Python/Djangogirls</button>
-                    <button class="btn" onclick="filterSelection('cars')"> Javascript/Css</button>
-                    <button class="btn" onclick="filterSelection('people')"> Java/Database</button>
-                </div>
-
-                <!-- Portfolio Gallery Grid -->
-                <div class="row">
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="f1-1.jpg" alt="Mountains" style="width:100%">
-                            <h4>점프 투 파이썬</h4>
-                            <p>파이썬(컴퓨터 언어)의 이해와, 서버와 클라이언트 관계</p>
-                        </div>
-                    </div>
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="f2-1.jpg" alt="Lights" style="width:100%">
-                            <h4>장고걸스 튜토리얼</h4>
-                            <p>파이썬 언어로 장고걸스 게시판 만들기 </p>
-                        </div>
-                    </div>
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="f3-1.jpg" alt="Nature" style="width:100%">
-                            <h4>파이참/깃/파이썬 애니워어</h4>
-                            <p>프레임워크(파이참) 설치, 깃(github)저장소에 올리기, 파이썬애니워어로 서버에 띄우기</p>
-                        </div>
-                    </div>
-
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="f4-1.jpg" alt="Car" style="width:100%">
-                            <h4>자바스크립트</h4>
-                            <p>자바스크립트 이해와 조건문을 이용한 함수 구현하기</p>
-                        </div>
-                    </div>
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="f5.jpg" alt="Car" style="width:100%">
-                            <h4>css</h4>
-                            <p>css 이해와 style 태그로 스타일 적용해보기</p>
-                        </div>
-                    </div>
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="f6.jpg" alt="Car" style="width:100%">
-                            <h4>visual studio code/ 계산기 만들기</h4>
-                            <p>자바스크립트와 css를 이용하여 code editer를 이용하여 계산기 구현하기</p>
-                        </div>
-                    </div>
-
-                    <div class="column people">
-                        <div class="content">
-                            <img src="f7.jpg" alt="Car" style="width:100%">
-                            <h4>점프 투 자바</h4>
-                            <p> 자바 이해와 환경설정 -jdk 설치/이클립스 설치</p>
-                        </div>
-                    </div>
-                    <div class="column people">
-                        <div class="content">
-                            <img src="f8.jpg" alt="Car" style="width:100%">
-                            <h4>jsp</h4>
-                            <p>JavaServer Pages(jsp) 서버에 띄우기/ 태그라이브러리(jstl)사용하기</p>
-                        </div>
-                    </div>
-                    <div class="column people">
-                        <div class="content">
-                            <img src="f9.jpg" alt="Car" style="width:100%">
-                            <h4>database/ jdbc</h4>
-                            <p>maria db 설치및 데이터베이스에 데이터 저장</p>
-                        </div>
-                    </div>
-                    <!-- END GRID -->
-                </div>
-
-                <!-- END MAIN -->
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="c4-1.jpg" alt="Mountains" style="width:100%">
+                <h3>옷감찾기</h3>
+                <p>옷을 만들기 전 옷감선택입니다.
+                    디자인과 옷감선택은 옷 만들기에서 가장 중요하고도 가장 어려운입니다.
+                </p>
             </div>
-
-            <script>
-                filterSelection("all")
-                function filterSelection(c) {
-                    var x, i;
-                    x = document.getElementsByClassName("column");
-                    if (c == "all") c = "";
-                    for (i = 0; i < x.length; i++) {
-                        w3RemoveClass(x[i], "show");
-                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                    }
-                }
-
-                function w3AddClass(element, name) {
-                    var i, arr1, arr2;
-                    arr1 = element.className.split(" ");
-                    arr2 = name.split(" ");
-                    for (i = 0; i < arr2.length; i++) {
-                        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-                    }
-                }
-
-                function w3RemoveClass(element, name) {
-                    var i, arr1, arr2;
-                    arr1 = element.className.split(" ");
-                    arr2 = name.split(" ");
-                    for (i = 0; i < arr2.length; i++) {
-                        while (arr1.indexOf(arr2[i]) > -1) {
-                            arr1.splice(arr1.indexOf(arr2[i]), 1);
-                        }
-                    }
-                    element.className = arr1.join(" ");
-                }
-
-
-                // Add active class to the current button (highlight it)
-                var btnContainer = document.getElementById("myBtnContainer");
-                var btns = btnContainer.getElementsByClassName("btn");
-                for (var i = 0; i < btns.length; i++) {
-                    btns[i].addEventListener("click", function () {
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                    });
-                }
-            </script>
-
-
-
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c5.jpg" alt="Lights" style="width:100%">
+                <h3>패턴찾기</h3>
+                <p>옷 디자인 대로 큰 패턴지에 먼저 옷 구성요소를 하나하나 들어갈 패턴을 제도하는 작업입니다.
+                    치수와 안감, 겉감 디자인 모든요소를 결정하는 단계입니다.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c6.jpg" alt="Nature" style="width:100%">
+                <h3>제도하기</h3>
+                <p>패턴 찾기에서 찾은 패턴을 패턴지에 그려 정확하고도 또한 디자인적인 요소를 가미해야하는 작업입니다.
+                    실선과 완성선(실제 옷감에대고짜를때) 또한 중요한 단계입니다.
+                </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="c7.jpg" alt="Mountains" style="width:100%">
+                <h3>자르기</h3>
+                <p>제도한 패턴을 선택한 옷감에 대고 초크를 사용하여 옷감을 그리고 자르는 단계입니다.
+                    패턴과 맞는지 또한 완성선을 제대로 그렸는지 정확히 확인하고 자르는 단계입니다.
+                </p>
+            </div>
         </div>
     </div>
+    <div class="column">
+        <div class="content">
+            <img src="c8.jpg" alt="Mountains" style="width:100%">
+            <h3>제봉하기</h3>
+            <p>패턴과 자르는 단계에서 옷감을 만들고 구성요소를 붙이는 단계입니다. 어깨부분과 들어가는 허리부분은 디자인과 모델에 맞게
+                디자인적인 요소가 들어가는 단계입니다.
+            </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c9.jpg" alt="Mountains" style="width:100%">
+            <h3>점검하기</h3>
+            <p>만들옷을 모델에게 입혀보기전 실수한 부분이 없는지 또 추가할 부분은 없는지 마네킹에 입혀보고 확인하는 단계입니다. </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c10.jpg" alt="Mountains" style="width:100%">
+            <h3>작업지시서작성</h3>
+            <p>실제 회사에서 작업을 하는것처럼 만든옷을 컴퓨터로 일러스트 작업을 하여 보고하는 단계입니다. </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="c10-1.jpg" alt="Mountains" style="width:100%">
+            <h3>현장실습</h3>
+            <p>해피상사 2017-07-03 ~2017-07-28 한달간 현장에서 어떤 일을하는지 경험했습니다.
+                옷감으로 옷이만들어지는 단계와 컴퓨터로 작업하는 단계 또한 포장하고 배송하는 단계까지 배울수 있었습니다.</p>
+        </div>
+    </div>
+    
+   
 </body>
 
 </html>
